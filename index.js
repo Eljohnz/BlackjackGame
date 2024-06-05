@@ -67,6 +67,6 @@ function newCard() {
     }
 }
 
-function bet() {
-    
+function betOne() {
+    playerEl.textContent = player.name + ": $" + (player.chips - 100)
 }
