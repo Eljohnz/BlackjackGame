@@ -1,6 +1,6 @@
 let player = {
-    name: "Per",
-    chips: 200
+    name: "Player Balance",
+    chips: 300
 }
 
 let cards = []
@@ -34,6 +34,7 @@ function startGame() {
     cards = [firstCard, secondCard]
     sum = firstCard + secondCard
     renderGame()
+    restart.textContent = "Start Again"
 }
 
 function renderGame() {
@@ -64,4 +65,8 @@ function newCard() {
         cards.push(card)
         renderGame()        
     }
+}
+
+function bet() {
+    
 }
